@@ -1,0 +1,11 @@
+{
+  "name": "kinoheld/geo-distance",
+  "description": "Helpers to calculate geo distance between two points in kilometers.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "kinoheld\\GeoDistance\\": "src/"
+    }
+  }
+}
