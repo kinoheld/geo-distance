@@ -18,7 +18,7 @@ class GeoDistance
 	 */
 	public static function calculateDistance(float $sourceLatitude, float $sourceLongitude, float $destinationLatitude, float $destinationLongitude)
 	{
-		return ( self::EARTH_RADIUS_KILOMETERS * acos( cos( rad2deg( $sourceLatitude ) ) * cos( rad2deg( $destinationLatitude ) ) * cos( rad2deg( $destinationLongitude ) - rad2deg( $sourceLongitude ) ) + sin( rad2deg( $sourceLatitude ) ) * sin( rad2deg( $destinationLatitude ) ) ) );
+		return ( self::EARTH_RADIUS_KILOMETERS * acos( cos( deg2rad( $sourceLatitude ) ) * cos( deg2rad( $destinationLatitude ) ) * cos( deg2rad( $destinationLongitude ) - deg2rad( $sourceLongitude ) ) + sin( deg2rad( $sourceLatitude ) ) * sin( deg2rad( $destinationLatitude ) ) ) );
 	}
 
 	/**
